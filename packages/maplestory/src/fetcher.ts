@@ -3,7 +3,7 @@ type RequestHeaders = Record<string, string>;
 interface RequestOptions<Output> extends RequestInit {
   headers?: RequestHeaders;
   parser?: (data: unknown) => Output;
-  searchParams?: Record<string, string>;
+  searchParams?: Record<string, number | string>;
   url: string;
 }
 
@@ -17,14 +17,19 @@ export class Fetcher {
   async request<Output = unknown>({
     headers: _headers,
     parser,
-    searchParams,
+    searchParams: _searchParams,
     url,
     ...options
   }: RequestOptions<Output>) {
-    const endpoint = new URL(
-      `${url}${searchParams != null ? `?${new URLSearchParams(searchParams).toString()}` : ''}`,
-      this.baseUrl,
-    );
+    const searchParams =
+      _searchParams != null
+        ? `?${new URLSearchParams(
+            Object.fromEntries(
+              Object.entries(_searchParams).map((key, value) => [key, value.toString()]),
+            ),
+          ).toString()}`
+        : '';
+    const endpoint = new URL(`${url}${searchParams}`, this.baseUrl);
     const headers = new Headers({
       ...this.baseHeaders,
       ..._headers,
