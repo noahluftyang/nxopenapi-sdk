@@ -2,6 +2,16 @@
   "name": "nxopenapi-sdk-maplestory",
   "version": "0.0.0",
   "description": "maplestory nexon open api sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahluftyang/nxopenapi-sdk.git"
+  },
+  "author": "noahluftyang <euihyun.yang.9x@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noahluftyang/nxopenapi-sdk/issues"
+  },
+  "homepage": "https://github.com/noahluftyang/nxopenapi-sdk/packages/maplestory",
   "type": "module",
   "main": "src/index.ts",
   "publishConfig": {
