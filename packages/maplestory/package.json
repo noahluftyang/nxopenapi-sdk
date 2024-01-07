@@ -1,0 +1,17 @@
+{
+  "name": "nxopenapi-sdk-maplestory",
+  "version": "0.0.0",
+  "description": "maplestory nexon open api sdk",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typed-openapi": "^0.4.1",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
+  }
+}

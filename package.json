@@ -1,5 +1,6 @@
 {
-  "name": "noah-stack",
+  "name": "nxopenapi-sdk",
+  "private": true,
   "type": "module",
   "license": "MIT",
   "scripts": {
