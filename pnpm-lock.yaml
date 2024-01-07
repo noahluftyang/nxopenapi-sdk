@@ -11,6 +11,9 @@ importers:
       '@biomejs/biome':
         specifier: ^1.4.1
         version: 1.4.1
+      '@changesets/cli':
+        specifier: ^2.27.1
+        version: 2.27.1
       '@commitlint/cli':
         specifier: ^17.6.3
         version: 17.6.3
@@ -619,7 +622,7 @@ packages:
       '@changesets/types': 6.0.0
       fs-extra: 7.0.1
       human-id: 1.0.2
-      prettier: 2.8.4
+      prettier: 2.8.8
     dev: true
 
   /@commitlint/cli@17.6.3:

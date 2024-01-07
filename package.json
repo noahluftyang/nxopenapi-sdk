@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
+    "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@commitlint/config-pnpm-scopes": "^17.5.0",
