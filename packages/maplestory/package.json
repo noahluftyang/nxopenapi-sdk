@@ -13,11 +13,13 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "prepack": "pnpm build",
-    "test": "echo \"Error: no test specified\""
+    "test": "vitest"
   },
   "dependencies": {
     "zod": "^3.22.4"
@@ -27,6 +29,6 @@
     "tsup": "^6.7.0",
     "typed-openapi": "^0.4.1",
     "typescript": "^5.3.3",
-    "vitest": "^0.31.0"
+    "vitest": "^1.1.3"
   }
 }
